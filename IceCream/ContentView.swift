@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Binding var icecream: IceCream
 
         var body: some View {
-            IceCreamView(icecream: $icecream)
+            IceCreamView()
         }
-
 }

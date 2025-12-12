@@ -9,8 +9,9 @@ import Foundation
 import SwiftUI
 
 struct IceCreamView : View {
-    @Binding  var icecream: IceCream
     @StateObject private var repo = Injector.flavourRepository
+    @State private var selectedFormat: Format = Injector.formatRepository.formats.first!
+        @State private var selectedExtras: [Extra] = []
     let formatrepo = Injector.formatRepository
     let extrarepo = Injector.extraRepository
     let service = IceCreamService()
@@ -19,7 +20,7 @@ struct IceCreamView : View {
         let plusBoule = service.tooManyScoop(repo.flavours)
         let totalBoule = service.totalboule(repo.flavours)
         let price_glace = service.glacePrix(flavours:repo.flavours,
-                                                    format: icecream.format, extrasSelected: icecream.extras)
+                                                    format: selectedFormat, extrasSelected: selectedExtras)
         let scoopmany = totalBoule > 5
         
         VStack {
@@ -58,11 +59,11 @@ struct IceCreamView : View {
                 ForEach(formatrepo.formats, id: \.name) { format in
                     Button {
                         // sélection du format (radio = un seul possible)
-                        icecream.format = format
+                        selectedFormat = format
                     } label: {
                         HStack {
                             // Icône radio
-                            Image(systemName: icecream.format.name == format.name
+                            Image(systemName: selectedFormat.name == format.name
                                   ? "largecircle.fill.circle"
                                   : "circle")
                             
@@ -84,15 +85,15 @@ struct IceCreamView : View {
                     .foregroundColor(.primary)
             VStack(alignment: .leading, spacing: 12) {
                 ForEach(extrarepo.extras, id: \.name) { extra in
-                    let isSelected = icecream.extras.contains { $0.name == extra.name }
+                    let isSelected = selectedExtras.contains { $0.name == extra.name }
                     
                     Button {
                         if isSelected {
                             // enlever l'extra
-                            icecream.extras.removeAll { $0.name == extra.name }
+                            selectedExtras.removeAll { $0.name == extra.name }
                         } else {
                             // ajouter l'extra
-                            icecream.extras.append(extra)
+                            selectedExtras.append(extra)
                         }
                     } label: {
                         HStack {
@@ -114,7 +115,7 @@ struct IceCreamView : View {
             HStack(spacing:16){
                 Text("Price") .font(.headline)
                 Spacer()
-                Text("€")
+                Text("€\(service.formatPrice(price_glace))")
             }
             .padding(.top, 8)
             .frame(maxWidth: .infinity, alignment: .leading)

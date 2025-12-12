@@ -8,10 +8,20 @@
 import Foundation
 class FlavourRepositoryDummyImpl: ObservableObject, FlavourRepository {
     @Published var flavours: [Flavour] = [
-        Flavour(image: "chocolate", name: "Chocolate", qty: 1),
-        Flavour(image: "vanilla", name: "Vanilla", qty: 0),
-        Flavour(image: "pistachio", name: "Pistachio", qty: 0),
+        Flavour(image: "chocolate", name: "Chocolate", qty: 1, stock: 10),
+        Flavour(image: "vanilla", name: "Vanilla", qty: 0, stock:5),
+        Flavour(image: "pistachio", name: "Pistachio", qty: 0, stock:0),
     ]
+    
+    func consumeSelections() {
+        for i in flavours.indices {
+            let s = flavours[i].qty
+            if s > 0 {
+                flavours[i].stock = max(0, flavours[i].stock - s)
+                flavours[i].qty = 0
+            }
+        }
+    }
 }
 
 class FormatRepositoryDummyImpl: ObservableObject, FormatRepository {
@@ -27,3 +37,5 @@ class ExtraRepositoryDummyImpl: ObservableObject, ExtraRepository {
         Extra(name: "Hazelnuts", price: 1.30),
     ]
 }
+
+

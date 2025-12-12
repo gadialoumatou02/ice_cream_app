@@ -11,6 +11,7 @@ struct Flavour: Identifiable{
     var image: String
     var name: String
     var qty: Int
+    var stock: Int
 }
 // Cup or Cone
 struct Format: Identifiable {

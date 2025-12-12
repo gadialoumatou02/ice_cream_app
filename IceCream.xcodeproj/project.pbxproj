@@ -21,6 +21,7 @@
 		CE80352F2EE6E2DD002E2F28 /* flavourview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80352E2EE6E2DD002E2F28 /* flavourview.swift */; };
 		CEE445EA2EEC7DC700D60E11 /* icecreamservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE445E92EEC7DC700D60E11 /* icecreamservice.swift */; };
 		CEE445EC2EEC7E1200D60E11 /* icecreamview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE445EB2EEC7E1200D60E11 /* icecreamview.swift */; };
+		CEE445EE2EEC8FC500D60E11 /* flavourstockview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE445ED2EEC8FC500D60E11 /* flavourstockview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		CE80352E2EE6E2DD002E2F28 /* flavourview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flavourview.swift; sourceTree = "<group>"; };
 		CEE445E92EEC7DC700D60E11 /* icecreamservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamservice.swift; sourceTree = "<group>"; };
 		CEE445EB2EEC7E1200D60E11 /* icecreamview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamview.swift; sourceTree = "<group>"; };
+		CEE445ED2EEC8FC500D60E11 /* flavourstockview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flavourstockview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				CE80352E2EE6E2DD002E2F28 /* flavourview.swift */,
 				CEE445EB2EEC7E1200D60E11 /* icecreamview.swift */,
+				CEE445ED2EEC8FC500D60E11 /* flavourstockview.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE80352F2EE6E2DD002E2F28 /* flavourview.swift in Sources */,
+				CEE445EE2EEC8FC500D60E11 /* flavourstockview.swift in Sources */,
 				CE8035262EE6DA05002E2F28 /* icecreamcompdummyimpl.swift in Sources */,
 				CEE445EA2EEC7DC700D60E11 /* icecreamservice.swift in Sources */,
 				CE8035222EE6D764002E2F28 /* icecreamcomp.swift in Sources */,

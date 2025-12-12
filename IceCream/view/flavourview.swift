@@ -29,8 +29,20 @@ struct FlavourView: View {
                 .buttonStyle(.bordered)
             }
             
-            Text(String(flavor.qty))
-                .frame(width: 20, alignment: .trailing)
+            if flavor.stock == 0 {
+                            NavigationLink {
+                                FlavourStockView(flavourName: flavor.name)
+                            } label: {
+                                Image(systemName: "exclamationmark.circle.fill")
+                                    .foregroundColor(.red)
+                                    .font(.title3)
+                            }
+                            .buttonStyle(.plain)
+                            .frame(width: 24, alignment: .trailing)
+                        } else {
+                            Text("\(flavor.qty)")
+                                .frame(width: 24, alignment: .trailing)
+                        }
             
         }
         .padding(.vertical, 4)
