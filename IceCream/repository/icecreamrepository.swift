@@ -6,9 +6,17 @@
 //
 
 import Foundation
-protocol IceCreamRepository {
+
+protocol FlavourRepository {
     var flavours: [Flavour] {get}
+
+}
+
+protocol FormatRepository {
     var formats: [Format] {get}
+}
+
+protocol ExtraRepository {
     var extras: [Extra] {get}
 
 }

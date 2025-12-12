@@ -14,6 +14,13 @@
 		CE8035032EE6D241002E2F28 /* IceCreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8035022EE6D241002E2F28 /* IceCreamTests.swift */; };
 		CE80350D2EE6D241002E2F28 /* IceCreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80350C2EE6D241002E2F28 /* IceCreamUITests.swift */; };
 		CE80350F2EE6D241002E2F28 /* IceCreamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80350E2EE6D241002E2F28 /* IceCreamUITestsLaunchTests.swift */; };
+		CE8035222EE6D764002E2F28 /* icecreamcomp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8035212EE6D764002E2F28 /* icecreamcomp.swift */; };
+		CE8035262EE6DA05002E2F28 /* icecreamcompdummyimpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8035252EE6DA05002E2F28 /* icecreamcompdummyimpl.swift */; };
+		CE80352A2EE6DDBC002E2F28 /* injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8035292EE6DDBC002E2F28 /* injector.swift */; };
+		CE80352D2EE6DEC3002E2F28 /* icecreamrepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80352C2EE6DEC3002E2F28 /* icecreamrepository.swift */; };
+		CE80352F2EE6E2DD002E2F28 /* flavourview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80352E2EE6E2DD002E2F28 /* flavourview.swift */; };
+		CEE445EA2EEC7DC700D60E11 /* icecreamservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE445E92EEC7DC700D60E11 /* icecreamservice.swift */; };
+		CEE445EC2EEC7E1200D60E11 /* icecreamview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE445EB2EEC7E1200D60E11 /* icecreamview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		CE8035082EE6D241002E2F28 /* IceCreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceCreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE80350C2EE6D241002E2F28 /* IceCreamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamUITests.swift; sourceTree = "<group>"; };
 		CE80350E2EE6D241002E2F28 /* IceCreamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE8035212EE6D764002E2F28 /* icecreamcomp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamcomp.swift; sourceTree = "<group>"; };
+		CE8035252EE6DA05002E2F28 /* icecreamcompdummyimpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamcompdummyimpl.swift; sourceTree = "<group>"; };
+		CE8035292EE6DDBC002E2F28 /* injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = injector.swift; sourceTree = "<group>"; };
+		CE80352C2EE6DEC3002E2F28 /* icecreamrepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamrepository.swift; sourceTree = "<group>"; };
+		CE80352E2EE6E2DD002E2F28 /* flavourview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flavourview.swift; sourceTree = "<group>"; };
+		CEE445E92EEC7DC700D60E11 /* icecreamservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamservice.swift; sourceTree = "<group>"; };
+		CEE445EB2EEC7E1200D60E11 /* icecreamview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,9 @@
 		CE8034F02EE6D240002E2F28 /* IceCream */ = {
 			isa = PBXGroup;
 			children = (
+				CE80352B2EE6DE8F002E2F28 /* view */,
+				CE80351E2EE6D6C8002E2F28 /* repository */,
+				CE80351B2EE6D3FC002E2F28 /* data */,
 				CE8034F12EE6D240002E2F28 /* IceCreamApp.swift */,
 				CE8034F32EE6D240002E2F28 /* ContentView.swift */,
 				CE8034F52EE6D241002E2F28 /* Assets.xcassets */,
@@ -125,6 +142,34 @@
 				CE80350E2EE6D241002E2F28 /* IceCreamUITestsLaunchTests.swift */,
 			);
 			path = IceCreamUITests;
+			sourceTree = "<group>";
+		};
+		CE80351B2EE6D3FC002E2F28 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				CE8035212EE6D764002E2F28 /* icecreamcomp.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		CE80351E2EE6D6C8002E2F28 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				CE8035252EE6DA05002E2F28 /* icecreamcompdummyimpl.swift */,
+				CE8035292EE6DDBC002E2F28 /* injector.swift */,
+				CE80352C2EE6DEC3002E2F28 /* icecreamrepository.swift */,
+				CEE445E92EEC7DC700D60E11 /* icecreamservice.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		CE80352B2EE6DE8F002E2F28 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CE80352E2EE6E2DD002E2F28 /* flavourview.swift */,
+				CEE445EB2EEC7E1200D60E11 /* icecreamview.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE80352F2EE6E2DD002E2F28 /* flavourview.swift in Sources */,
+				CE8035262EE6DA05002E2F28 /* icecreamcompdummyimpl.swift in Sources */,
+				CEE445EA2EEC7DC700D60E11 /* icecreamservice.swift in Sources */,
+				CE8035222EE6D764002E2F28 /* icecreamcomp.swift in Sources */,
+				CE80352D2EE6DEC3002E2F28 /* icecreamrepository.swift in Sources */,
 				CE8034F42EE6D240002E2F28 /* ContentView.swift in Sources */,
 				CE8034F22EE6D240002E2F28 /* IceCreamApp.swift in Sources */,
+				CEE445EC2EEC7E1200D60E11 /* icecreamview.swift in Sources */,
+				CE80352A2EE6DDBC002E2F28 /* injector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
