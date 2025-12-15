@@ -119,7 +119,7 @@ struct FlavourStockView: View {
                             
                             Spacer()
                             
-                            Text("\(f.stock)")
+                            Text("\(f.stock) ml")
                                 .foregroundColor(.secondary)
                         }
                     }
