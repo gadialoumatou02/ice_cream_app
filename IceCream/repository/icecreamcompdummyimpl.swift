@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class FlavourRepositoryDummyImpl: ObservableObject, FlavourRepository {
+class FlavourRepositoryDummyImpl: ObservableObject {
     @Published var flavours: [Flavour] = [
         Flavour(image: "chocolate", name: "Chocolate", qty: 1, stock: 10),
         Flavour(image: "vanilla", name: "Vanilla", qty: 0, stock:5),
@@ -24,14 +24,14 @@ class FlavourRepositoryDummyImpl: ObservableObject, FlavourRepository {
     }
 }
 
-class FormatRepositoryDummyImpl: ObservableObject, FormatRepository {
+class FormatRepositoryDummyImpl: ObservableObject{
     @Published var formats: [Format] = [
         Format(name: "Cup", price: 0.0, stock: 7),
-        Format(name: "Cone", price: 1.0, stock: 7),
+        Format(name: "Cone", price: 1.0, stock: 2),
     ]
 }
 
-class ExtraRepositoryDummyImpl: ObservableObject, ExtraRepository {
+class ExtraRepositoryDummyImpl: ObservableObject{
     @Published var extras: [Extra] = [
         Extra(name: "Whipped cream", price: 0.95, stock: 150, unite: "ml"),
         Extra(name: "Hazelnuts", price: 1.30, stock: 100, unite: "g"),

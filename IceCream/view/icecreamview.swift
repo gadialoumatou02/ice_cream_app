@@ -25,7 +25,7 @@ struct IceCreamView : View {
         
         VStack {
             HStack(spacing:16){
-                Text("Ice cream") .font(.headline)
+                Text("Ice cream") .font(.largeTitle)
             }
             .padding(.top, 8)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -47,6 +47,7 @@ struct IceCreamView : View {
             }
             .listStyle(.plain)
             .frame(height: 3 * 72)
+            Divider()
             
             // Format
             Text("Cone or Cup")
@@ -55,7 +56,7 @@ struct IceCreamView : View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundColor(.primary)
             
-            VStack(alignment: .leading, spacing: 8) {
+            VStack(alignment: .leading, spacing: 16) {
                 ForEach(formatrepo.formats, id: \.name) { format in
                     Button {
                         // sélection du format (radio = un seul possible)
@@ -77,13 +78,13 @@ struct IceCreamView : View {
                     .foregroundColor(.primary)
                 }
             }
-            
+            Divider()
             // Extras
             Text("Extras")
                     .font(.headline)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundColor(.primary)
-            VStack(alignment: .leading, spacing: 12) {
+            VStack(alignment: .leading, spacing: 16) {
                 ForEach(extrarepo.extras, id: \.name) { extra in
                     let isSelected = selectedExtras.contains { $0.name == extra.name }
                     
@@ -112,10 +113,10 @@ struct IceCreamView : View {
                     .foregroundColor(.primary)
                 }
             }
-            HStack(spacing:16){
+            HStack(spacing: 16){
                 Text("Price") .font(.headline)
                 Spacer()
-                Text("€\(service.formatPrice(price_glace))")
+                Text("€ \(service.formatPrice(price_glace))")
             }
             .padding(.top, 8)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -123,7 +124,8 @@ struct IceCreamView : View {
             Button("Make icecream"){
             }
             .buttonStyle(.borderedProminent)
-            .tint(.mint)
+            .foregroundColor(.white)
+            .tint(.purple)
             .disabled(!plusBoule)
             .opacity(plusBoule ? 1 : 0.5)
             .padding(.top, 12)

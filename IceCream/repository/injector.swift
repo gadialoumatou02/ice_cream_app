@@ -11,4 +11,5 @@ class Injector {
     static let flavourRepository = FlavourRepositoryDummyImpl()
     static let formatRepository = FormatRepositoryDummyImpl()
     static let extraRepository = ExtraRepositoryDummyImpl()
+    static let sendMailService = SendMailRepositoryDummyImpl()
 }

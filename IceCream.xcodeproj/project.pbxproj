@@ -17,8 +17,14 @@
 		CE8035222EE6D764002E2F28 /* icecreamcomp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8035212EE6D764002E2F28 /* icecreamcomp.swift */; };
 		CE8035262EE6DA05002E2F28 /* icecreamcompdummyimpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8035252EE6DA05002E2F28 /* icecreamcompdummyimpl.swift */; };
 		CE80352A2EE6DDBC002E2F28 /* injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8035292EE6DDBC002E2F28 /* injector.swift */; };
-		CE80352D2EE6DEC3002E2F28 /* icecreamrepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80352C2EE6DEC3002E2F28 /* icecreamrepository.swift */; };
 		CE80352F2EE6E2DD002E2F28 /* flavourview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80352E2EE6E2DD002E2F28 /* flavourview.swift */; };
+		CEB099852EEFF92C00ADD428 /* flavourstockservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB099842EEFF92C00ADD428 /* flavourstockservice.swift */; };
+		CEB099872EEFF94300ADD428 /* icecreamcomprepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB099862EEFF94300ADD428 /* icecreamcomprepository.swift */; };
+		CEB099892EF009A000ADD428 /* stockmailservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB099882EF009A000ADD428 /* stockmailservice.swift */; };
+		CEB0998F2EF00C6300ADD428 /* sendmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB0998E2EF00C6300ADD428 /* sendmail.swift */; };
+		CEB099912EF00CA500ADD428 /* sendmailrepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB099902EF00CA500ADD428 /* sendmailrepository.swift */; };
+		CEB099932EF00D0E00ADD428 /* sendmailrepositorydummyimpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB099922EF00D0E00ADD428 /* sendmailrepositorydummyimpl.swift */; };
+		CEB099952EF011EE00ADD428 /* sendmailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB099942EF011EE00ADD428 /* sendmailview.swift */; };
 		CEE445EA2EEC7DC700D60E11 /* icecreamservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE445E92EEC7DC700D60E11 /* icecreamservice.swift */; };
 		CEE445EC2EEC7E1200D60E11 /* icecreamview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE445EB2EEC7E1200D60E11 /* icecreamview.swift */; };
 		CEE445EE2EEC8FC500D60E11 /* flavourstockview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE445ED2EEC8FC500D60E11 /* flavourstockview.swift */; };
@@ -55,8 +61,14 @@
 		CE8035212EE6D764002E2F28 /* icecreamcomp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamcomp.swift; sourceTree = "<group>"; };
 		CE8035252EE6DA05002E2F28 /* icecreamcompdummyimpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamcompdummyimpl.swift; sourceTree = "<group>"; };
 		CE8035292EE6DDBC002E2F28 /* injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = injector.swift; sourceTree = "<group>"; };
-		CE80352C2EE6DEC3002E2F28 /* icecreamrepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamrepository.swift; sourceTree = "<group>"; };
 		CE80352E2EE6E2DD002E2F28 /* flavourview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flavourview.swift; sourceTree = "<group>"; };
+		CEB099842EEFF92C00ADD428 /* flavourstockservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flavourstockservice.swift; sourceTree = "<group>"; };
+		CEB099862EEFF94300ADD428 /* icecreamcomprepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = icecreamcomprepository.swift; sourceTree = "<group>"; };
+		CEB099882EF009A000ADD428 /* stockmailservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stockmailservice.swift; sourceTree = "<group>"; };
+		CEB0998E2EF00C6300ADD428 /* sendmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sendmail.swift; sourceTree = "<group>"; };
+		CEB099902EF00CA500ADD428 /* sendmailrepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendmailrepository.swift; sourceTree = "<group>"; };
+		CEB099922EF00D0E00ADD428 /* sendmailrepositorydummyimpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendmailrepositorydummyimpl.swift; sourceTree = "<group>"; };
+		CEB099942EF011EE00ADD428 /* sendmailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendmailview.swift; sourceTree = "<group>"; };
 		CEE445E92EEC7DC700D60E11 /* icecreamservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamservice.swift; sourceTree = "<group>"; };
 		CEE445EB2EEC7E1200D60E11 /* icecreamview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecreamview.swift; sourceTree = "<group>"; };
 		CEE445ED2EEC8FC500D60E11 /* flavourstockview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flavourstockview.swift; sourceTree = "<group>"; };
@@ -110,6 +122,7 @@
 		CE8034F02EE6D240002E2F28 /* IceCream */ = {
 			isa = PBXGroup;
 			children = (
+				CEB0998B2EF00AA500ADD428 /* service */,
 				CE80352B2EE6DE8F002E2F28 /* view */,
 				CE80351E2EE6D6C8002E2F28 /* repository */,
 				CE80351B2EE6D3FC002E2F28 /* data */,
@@ -149,6 +162,7 @@
 		CE80351B2EE6D3FC002E2F28 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				CEB0998E2EF00C6300ADD428 /* sendmail.swift */,
 				CE8035212EE6D764002E2F28 /* icecreamcomp.swift */,
 			);
 			path = data;
@@ -157,10 +171,11 @@
 		CE80351E2EE6D6C8002E2F28 /* repository */ = {
 			isa = PBXGroup;
 			children = (
+				CEB099862EEFF94300ADD428 /* icecreamcomprepository.swift */,
 				CE8035252EE6DA05002E2F28 /* icecreamcompdummyimpl.swift */,
 				CE8035292EE6DDBC002E2F28 /* injector.swift */,
-				CE80352C2EE6DEC3002E2F28 /* icecreamrepository.swift */,
-				CEE445E92EEC7DC700D60E11 /* icecreamservice.swift */,
+				CEB099902EF00CA500ADD428 /* sendmailrepository.swift */,
+				CEB099922EF00D0E00ADD428 /* sendmailrepositorydummyimpl.swift */,
 			);
 			path = repository;
 			sourceTree = "<group>";
@@ -171,8 +186,19 @@
 				CE80352E2EE6E2DD002E2F28 /* flavourview.swift */,
 				CEE445EB2EEC7E1200D60E11 /* icecreamview.swift */,
 				CEE445ED2EEC8FC500D60E11 /* flavourstockview.swift */,
+				CEB099942EF011EE00ADD428 /* sendmailview.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		CEB0998B2EF00AA500ADD428 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				CEB099882EF009A000ADD428 /* stockmailservice.swift */,
+				CEB099842EEFF92C00ADD428 /* flavourstockservice.swift */,
+				CEE445E92EEC7DC700D60E11 /* icecreamservice.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,14 +333,20 @@
 			files = (
 				CE80352F2EE6E2DD002E2F28 /* flavourview.swift in Sources */,
 				CEE445EE2EEC8FC500D60E11 /* flavourstockview.swift in Sources */,
+				CEB0998F2EF00C6300ADD428 /* sendmail.swift in Sources */,
 				CE8035262EE6DA05002E2F28 /* icecreamcompdummyimpl.swift in Sources */,
+				CEB099912EF00CA500ADD428 /* sendmailrepository.swift in Sources */,
+				CEB099952EF011EE00ADD428 /* sendmailview.swift in Sources */,
 				CEE445EA2EEC7DC700D60E11 /* icecreamservice.swift in Sources */,
 				CE8035222EE6D764002E2F28 /* icecreamcomp.swift in Sources */,
-				CE80352D2EE6DEC3002E2F28 /* icecreamrepository.swift in Sources */,
+				CEB099892EF009A000ADD428 /* stockmailservice.swift in Sources */,
+				CEB099852EEFF92C00ADD428 /* flavourstockservice.swift in Sources */,
 				CE8034F42EE6D240002E2F28 /* ContentView.swift in Sources */,
 				CE8034F22EE6D240002E2F28 /* IceCreamApp.swift in Sources */,
+				CEB099932EF00D0E00ADD428 /* sendmailrepositorydummyimpl.swift in Sources */,
 				CEE445EC2EEC7E1200D60E11 /* icecreamview.swift in Sources */,
 				CE80352A2EE6DDBC002E2F28 /* injector.swift in Sources */,
+				CEB099872EEFF94300ADD428 /* icecreamcomprepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

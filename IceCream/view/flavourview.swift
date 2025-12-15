@@ -16,6 +16,7 @@ struct FlavourView: View {
                 .scaledToFit()
                 .frame(width: 40, height: 40)
             Text(flavor.name)
+            
             Spacer()
             HStack(spacing:4){
                 Button("-"){
@@ -28,20 +29,22 @@ struct FlavourView: View {
                 }
                 .buttonStyle(.bordered)
             }
+            Spacer()
             
             if flavor.stock == 0 {
                             NavigationLink {
-                                FlavourStockView(flavourName: flavor.name)
+                                FlavourStockView(flavour:$flavor)
                             } label: {
                                 Image(systemName: "exclamationmark.circle.fill")
                                     .foregroundColor(.red)
                                     .font(.title3)
+                                    .frame(width: 40)
                             }
                             .buttonStyle(.plain)
-                            .frame(width: 24, alignment: .trailing)
+                            .frame(width: 36, alignment: .trailing)
                         } else {
                             Text("\(flavor.qty)")
-                                .frame(width: 24, alignment: .trailing)
+                                .frame(width: 36, alignment: .trailing)
                         }
             
         }
@@ -59,5 +62,3 @@ struct FlavourView: View {
     }
     return PreviewWrapper()
 }*/
-
-
