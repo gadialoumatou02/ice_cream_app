@@ -18,6 +18,7 @@ struct Format: Identifiable {
     let id = UUID()
     var name: String
     var price: Double
+    var stock: Int
 }
 
 // Extras
@@ -25,6 +26,8 @@ struct Extra: Identifiable {
     let id = UUID()
     var name: String
     var price:  Double
+    var stock: Int
+    var unite: String
 }
 
 struct IceCream {

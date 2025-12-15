@@ -26,15 +26,15 @@ class FlavourRepositoryDummyImpl: ObservableObject, FlavourRepository {
 
 class FormatRepositoryDummyImpl: ObservableObject, FormatRepository {
     @Published var formats: [Format] = [
-        Format(name: "Cup", price: 0.0),
-        Format(name: "Cone", price: 1.0),
+        Format(name: "Cup", price: 0.0, stock: 7),
+        Format(name: "Cone", price: 1.0, stock: 7),
     ]
 }
 
 class ExtraRepositoryDummyImpl: ObservableObject, ExtraRepository {
     @Published var extras: [Extra] = [
-        Extra(name: "Whipped cream", price: 0.95),
-        Extra(name: "Hazelnuts", price: 1.30),
+        Extra(name: "Whipped cream", price: 0.95, stock: 150, unite: "ml"),
+        Extra(name: "Hazelnuts", price: 1.30, stock: 100, unite: "g"),
     ]
 }
 

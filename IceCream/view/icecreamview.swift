@@ -11,7 +11,7 @@ import SwiftUI
 struct IceCreamView : View {
     @StateObject private var repo = Injector.flavourRepository
     @State private var selectedFormat: Format = Injector.formatRepository.formats.first!
-        @State private var selectedExtras: [Extra] = []
+    @State private var selectedExtras: [Extra] = []
     let formatrepo = Injector.formatRepository
     let extrarepo = Injector.extraRepository
     let service = IceCreamService()
@@ -121,7 +121,6 @@ struct IceCreamView : View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .foregroundColor(.primary)
             Button("Make icecream"){
-                print("Ice cream created")
             }
             .buttonStyle(.borderedProminent)
             .tint(.mint)
